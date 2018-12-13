@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Recommendations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="/styles/recommendations.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans+Condensed:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+</head>
+
+<body>
+    <section class="nav-container">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="/" class="brand-logo left">Foods-To-Do</a>
+                    <ul id="nav-mobile" class="right">
+                        <li><a href="profile"><i class="material-icons">account_circle</i></a></li>
+                    </ul>
+            </div>
+        </nav>
+    </section>
+
+    <!----------------------------------------------RESTAURANT CARDS--------------------------------------------------------->
+    <header class="row">
+    <h4 class="center-align">Your Food-To-Do</h4>
+    </header>
+    <section class="card-section col s12 m3 l3" >
+        <div class="row" style="width:100%;"  id="restaurant">
+
+        </div>
+    </section>
+    <!------------------------------------------FORM------------------------------------------------------------------------->
+    <section class="form-container">
+    <h4 class="center-align">Create Food-To-Do</h4>
+        <form class="col s12 m2 l4 push-l4">
+            <div class="row col s12" style="width:100%;">
+                <div class="input-field col s12 m8 offset-m2">
+                    <input placeholder="Restaurant Name" id="restaurant-name" type="text" class="validate" required>
+
+                </div>
+                <div class="input-field col s12 m8 offset-m2">
+                    <input placeholder="Type" id="type" type="text" class="validate" required>
+
+                </div>
+            </div>
+            <div class="row col s12" style="width:100%;">
+                <div class="input-field col s12 m8 offset-m2">
+                    <input placeholder="Rating" id="rating" type="number" min="1" max="5" class="validate" required>
+
+                </div>
+            </div>
+            <div class="row col s12" style="width:100%;">
+                <div class="input-field col s12 m8 offset-m2">
+                    <input placeholder="Image Url" id="image" type="text" class="validate" required>
+
+                </div>
+            </div>
+            <div class="row col s12" style="width:100%;">
+                <div class="input-field col s12 m8 offset-m2">
+                    <input placeholder="Website" id="website" type="text" class="validate" required>
+
+                </div>
+            </div>
+            <div class="row col s12" style="width:100%;">
+                <div class="submit-form col s12 m8 offset-m2">
+                    <input type="submit" id="submit" type="submit" value="Add Food-To-Do" class="col s12 m12">
+                </div>
+            </div>
+        </form>
+    </section>
+
+
+
+
+
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script src="/scripts/app.js"></script>
+    <script src="/scripts/recommendations.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+</body>
+
+</html>

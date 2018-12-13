@@ -1,0 +1,113 @@
+body {
+    background-image: url('/images/homebg.jpg');
+    background-size: cover;
+    background-color: rgba(0,0,0,0.75);
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.container {
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foods-to-do {
+    height: 50px;
+    margin-bottom: 100px;
+}
+
+.shake:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    animation-iteration-count: 4;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+  
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+.buttons {
+    display: flex;
+}
+
+.signin-button:hover, 
+.profile-button:hover, 
+.signout-button:hover {
+    background-color: yellow;
+}
+
+.g-signin2 {
+    width: 135px;
+    height: 50px;
+    margin: 10px;
+    padding: 5px;
+    border: 2px yellow solid;
+    background-color: grey;
+    border-radius: 3px;
+}
+
+.profile-button {
+    width: 135px;
+    height: 50px;
+    margin: 10px;
+    padding: 5px;
+    border: 5px green solid;
+    background-color: white;
+    border-radius: 3px;
+    display: none;
+}
+
+.signout-button {
+    width: 135px;
+    height: 50px;
+    margin: 10px;
+    padding: 5px;
+    border: 5px red solid;
+    background-color: white;
+    border-radius: 3px;
+    display: none;
+}
+
+.intro {
+    margin: 10px;
+    padding: 5px;
+    width: auto;
+    text-align: justify;
+    font-size: 1.5em;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.intro:hover {
+    color: lightskyblue;
+}
+
+@media all and (max-width: 400px) {
+    .buttons { 
+        flex-direction: column; 
+    } 
+}

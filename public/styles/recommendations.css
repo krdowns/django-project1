@@ -1,0 +1,213 @@
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.nav-wrapper {
+    background-color: #BC0402;
+}
+
+ul a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.brand-logo {
+    margin-left: 2%;
+    font-weight: 700;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    ;
+}
+
+.card-section {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.card-image img {
+    height: 300px;
+    width: 100%;
+}
+
+.card-content {
+    width: 100%;
+}
+
+.card-action {
+    width: 100%;
+}
+
+.card-action a {
+    color: #ECBB5C
+}
+
+.card-title {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+.delete-icon {
+    color: #BC0402;
+    margin-left: 10%;
+}
+
+.delete-icon:hover {
+    cursor: pointer;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.filled {
+    color: #ECBB5C;
+}
+
+.unfilled {
+    color: transparent;
+}
+
+p i {
+    size: 25%;
+    color: rgba(119, 119, 119, 0.05);
+}
+
+.form-container {
+    background-color: rgba(119, 119, 119, 0.05);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.form-container h4 {
+    margin-bottom: 5%;
+}
+
+::placeholder {
+    color: #BC0402;
+}
+
+.submit-form input {
+    background-color: #BC0402;
+    color: white;
+    border: transparent;
+    height: 2em;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#submit:hover {
+    background-color: rgba(119, 119, 119, 0.05);
+    color: #BC0402;
+    border: 2px solid #BC0402;
+}
+
+
+.row {
+    margin-top: 2em;
+}
+
+.unchecked {
+    color: lightgray;
+}
+
+.checked {
+    color: #ECBB5C;
+}
+
+.unchecked:hover {
+    color: #ECBB5C;
+    cursor: pointer;
+}
+
+.checked:hover {
+    color: lightgray;
+    cursor: pointer;
+}
+
+.unchecked:hover ~ .unchecked {
+    color: #ECBB5C;
+    cursor: pointer;
+}
+
+.checked:hover ~ .checked {
+    color: lightgray;
+    cursor: pointer;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 1152px) {
+    .star-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .card-action {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 992px) {
+
+    .card-section {
+        margin-left: 0%;
+    }
+
+    .card-image img {
+        height: 275px;
+        width: 375px;
+    }
+
+    .card-title {
+        height: 20px;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+
+    .card-section {
+        height: 50%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #restaurant {
+        width: 100%;
+    }
+
+    .h6 {
+        font-size: 2rem;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    form {
+        padding-left: 3%;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .card-section {
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
+        padding-left: 3.25%;
+    }
+}

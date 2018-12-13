@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--google-signin-client_id meta element-->
+    <meta name="google-signin-client_id" content="480661915725-5nfits9a4bhkoeta9jnc71s8g97eubee.apps.googleusercontent.com">
+    <title>Foods-To-Do</title>
+    <!--Google Platform Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans+Condensed:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/login.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="foods-to-do shake">
+            <h3>Welcome to Foods-To-Do</h3>
+        </div>
+        <div class="buttons">
+            <button class="profile-button"><a href="profile"><strong>Profile</strong></a></button>
+            <div class="g-signin2 s8 center-align signin-button" data-onsuccess="onSignIn">Sign in</div>
+            <button class="signout-button"><a href="#" onclick="signOut();"><strong>Sign out</strong></a></button>
+        </div>
+        <div class="intro">
+            <p>
+                This is a website that will give you an idea which restaurant to go for the best menu in the city of
+                San Francisco.
+            </p>
+            <p>
+                <strong>Instruction</strong>: Click the google sign-in button to navigate.You can sign in to this website using Google OAuth2 sign in method. You do not require to
+                enter any of your credentials here to sign in.
+            </p>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script src="scripts/index.js"></script>
+</body>
+</html>

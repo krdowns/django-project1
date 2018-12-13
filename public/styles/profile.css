@@ -1,0 +1,136 @@
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+body {
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+    {
+    font-family: "Montserrat", sans-serif;
+}
+
+h4 {
+    margin-top: 2em;
+}
+
+.s8 {
+    font-weight: 900;
+    margin-right: 12.5%;
+    margin-left: 23px !important;
+}
+
+.name {
+    margin-top: 3.5%;
+}
+
+ul a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.nav-wrapper {
+    background-color: #BC0402;
+}
+
+.brand-logo {
+    margin-left: 2%;
+    font-weight: 700;
+}
+
+/* ----------------------------------------------PROFILE HEADER------------------------- */
+.profile-pic {
+    margin: 7.5% -10% 0 15%;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    /* border: 2px solid #D4CAB1; */
+}
+
+.valign-wrapper {
+    width: 90%;
+}
+
+.about-me {
+    background-color: rgba(119, 119, 119, 0.05);
+    margin-top: -2em;
+    height: 10em;
+}
+
+/* ----------------------------------------------RECENT EATS---------------------------- */
+
+.recent-content {
+    width: 100%;
+    padding-left: 1.5em;
+}
+
+.recent-eats {
+    margin-top: 2em;
+    width: 100%;
+}
+
+.recent-header {
+    margin-bottom: -1.25em;
+}
+
+.recent-restaurants {
+    margin-top: 5em;
+}
+
+.card-image img {
+    height: 300px;
+}
+
+.card-content {
+    margin-top: -1em;
+}
+
+p {
+    font-size: 1rem;
+    font-family: 'PT Serif', serif;
+    color: #777777;
+}
+
+.checked {
+    color: #ECBB5C;
+}
+
+.unchecked {
+    color: transparent;
+}
+
+.row {
+    margin-top: 2em;
+}
+
+.restaurant-card {
+    transition: all .2s ease-in-out;
+}
+
+.restaurant-card:hover {
+    transform: scale(1.02)
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 588px) {
+    .about-me {
+        height: 100px;
+    }
+
+    .about-me-text h5 {
+        font-size: 14px;
+        margin-top: 8%;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .profile-pic {
+        margin-left: -20%;
+    }
+}
